@@ -1,0 +1,21 @@
+diff -up DyLP-1.9.4/Makefile.in.orig DyLP-1.9.4/Makefile.in
+--- DyLP-1.9.4/Makefile.in.orig	2014-03-28 13:47:28.177187739 -0300
++++ DyLP-1.9.4/Makefile.in	2014-03-28 13:47:51.834188645 -0300
+@@ -351,7 +351,7 @@ EXTRA_DIST = AUTHORS LICENSE README NEWS
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = dylp.pc $(am__append_3)
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/DyLP
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -363,7 +363,7 @@ ACLOCAL_AMFLAGS = -I m4
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_5) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
